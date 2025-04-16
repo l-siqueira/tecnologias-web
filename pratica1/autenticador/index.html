@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Autenticador de Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Autenticador</h1>
+    <nav>
+      <ul>
+        <li><a href="#" id="link-login">Login</a></li>
+        <li><a href="#" id="link-cadastro">Cadastro de Itens</a></li>
+        <li><a href="#" id="link-listagem">Listagem</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Tela de Login -->
+    <section id="login-section" class="section active">
+      <h2>Login</h2>
+      <form id="login-form">
+        <input type="text" id="username" placeholder="Usuário" required />
+        <input type="password" id="password" placeholder="Senha" required />
+        <button type="submit">Entrar</button>
+      </form>
+      <p id="login-error" class="error"></p>
+    </section>
+
+    <!-- Tela de Cadastro -->
+    <section id="cadastro-section" class="section">
+      <h2>Cadastrar Item</h2>
+      <form id="cadastro-form">
+        <input type="text" id="item-nome" placeholder="Nome do item" required />
+        <input type="text" id="item-descricao" placeholder="Descrição" required />
+        <button type="submit">Cadastrar</button>
+      </form>
+    </section>
+
+    <!-- Tela de Listagem -->
+    <section id="listagem-section" class="section">
+      <h2>Itens Cadastrados</h2>
+      <ul id="item-lista"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
